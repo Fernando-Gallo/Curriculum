@@ -1,30 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/style.css">
-    <title>About Me</title>
+    <title>Sobre mí</title>
+    <style>
+        .about-container {
+            max-width: 700px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            padding: 2rem;
+            text-align: center;
+        }
+        .about-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #1C274C;
+            margin-bottom: 1rem;
+        }
+        .about-name {
+            color: #1C274C;
+            margin-bottom: 0.5rem;
+        }
+        .about-desc {
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+        .skills-list {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+        .skill-item {
+            background: #f5f7fa;
+            border-radius: 0.75rem;
+            padding: 1rem 1.5rem;
+            box-shadow: 0 1px 4px rgba(28,39,76,0.06);
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        @media (max-width: 600px) {
+            .about-container {
+                padding: 1rem;
+            }
+            .skills-list {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>About Me</h1>
+        <h1>Sobre mí</h1>
     </header>
 
     <div class="nav-bg">
         <nav class="navegacion-principal contenedor">
             <a href="index.html">Inicio</a>
-            <a href="AboutMe.html">Sobre mi</a>
+            <a href="AboutMe.html">Sobre mí</a>
             <a href="#">Clientes</a>
-            <a href="#">Contacto</a>
+            <a href="Contact.html">Contacto</a>
         </nav>
     </div>
 
-    <section class="about-me">
-        <h2>Hola, soy Luis Fernando Rodriguez Gallo</h2>
-        <p>Soy un profesional en diseño y desarrollo de sistemas con experiencia en diversas tecnologías.</p>
-        <p>Aquí puedes incluir más información sobre tu formación, experiencia laboral, habilidades y cualquier otro dato relevante que desees compartir.</p>
+    <section class="about-container">
+        <img class="about-photo" src="C:\Users\luisf\OneDrive\Documentos\CV_LFRG\IMG\IMGCV.jpeg" alt="Luis Fernando Rodriguez Gallo">
+        <h2 class="about-name">Luis Fernando Rodriguez Gallo</h2>
+        <p class="about-desc">
+            ¡Hola! Soy estudiante de Ingeniería en Sistemas Computacionales. Me gusta aprender sobre desarrollo web y crear soluciones tecnológicas sencillas y funcionales.<br>
+            Actualmente estoy practicando HTML, CSS y un poco de JavaScript.
+        </p>
+        <div>
+            <strong>Ubicación:</strong> Aguascalientes, Ags.<br>
+            <strong>Email:</strong> luis.fernando@email.com
+        </div>
+        <div class="skills-list">
+            <div class="skill-item">💻 HTML</div>
+            <div class="skill-item">🎨 CSS</div>
+            <div class="skill-item">🛠️ JavaScript</div>
+            <div class="skill-item">🌐 Trabajo en equipo</div>
+        </div>
     </section>
 
     <footer class="footer">
