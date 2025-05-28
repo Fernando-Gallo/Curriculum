@@ -1,152 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Krub', sans-serif;
-      background-color: #ffffff;
-      color: #222;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #1b1b1b;
-      color: #ffffff;
-      text-align: center;
-      padding: 2rem;
-    }
-
-    header h1 {
-      font-size: 2rem;
-      font-weight: bold;
-    }
-
-    .nav-bg {
-      background-color: #1b1b1b;
-    }
-
-    .navegacion-principal {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-    }
-
-    .navegacion-principal a {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    .navegacion-principal a:hover {
-      color: #d4d4d4;
-    }
-
-    .contenedor {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 2rem;
-    }
-
-    .sombra {
-      background-color: #f9f9f9;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    h2 {
-      margin-bottom: 1.5rem;
-      color: #1b1b1b;
-      font-size: 1.8rem;
-      border-bottom: 2px solid #1b1b1b;
-      padding-bottom: 0.5rem;
-    }
-
-    .info-contacto p {
-      margin-bottom: 1rem;
-      font-size: 1.1rem;
-    }
-
-    .info-contacto strong {
-      color: #000;
-    }
-
-    .info-contacto a {
-      color: #1b1b1b;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .info-contacto a:hover {
-      text-decoration: underline;
-    }
-
-    .footer {
-      background-color: #1b1b1b;
-      color: #ffffff;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      margin-top: 2rem;
-    }
-
-    @media (max-width: 768px) {
-      .navegacion-principal {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-      }
-
-      .contenedor {
-        padding: 1.5rem;
-        margin: 1rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Contacto</title>
 </head>
 <body>
-  <header>
-    <h1>ISC. Luis Fernando Rodriguez Gallo</h1>
-  </header>
+    <header>
+        <h1> ISC. Luis Fernando Rodriguez Gallo</h1>
+    </header>
 
-  <div class="nav-bg">
-    <nav class="navegacion-principal contenedor">
-      <a href="index.html">Inicio</a>
-      <a href="AboutMe.html">Sobre mí</a>
-      <a href="#">Clientes</a>
-      <a href="Contact.html">Contacto</a>
-    </nav>
-  </div>
-
-  <main class="contenedor sombra">
-    <h2>Contacto</h2>
-    <div class="info-contacto">
-      <p><strong>Nombre:</strong> Luis Fernando Rodriguez Gallo</p>
-      <p><strong>Teléfono:</strong> 449-123-4567</p>
-      <p><strong>Email:</strong> luis.fernando@gmail.com</p>
-      <p><strong>Ubicación:</strong> Aguascalientes, Ags.</p>
-      <p><strong>LinkedIn:</strong> 
-        <a href="https://www.linkedin.com/in/tuusuario" target="_blank">linkedin.com/in/tuusuario</a>
-      </p>
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html"> Inicio </a>
+            <a href="AboutMe.html"> Sobre mi </a>
+            <a href="#"> Clientes </a>
+            <a href="Contact.html"> Contacto </a>
+        </nav>
     </div>
-  </main>
 
-  <footer class="footer">
-    <p>Todos los derechos reservados ISC. Luis Fernando Rodriguez Gallo</p>
-  </footer>
+    <main class="contenedor sombra">
+        <h2>Contacto</h2>
+        <div class="info-contacto">
+            <p><strong>Nombre:</strong> Luis Fernando Rodriguez Gallo</p>
+            <p><strong>Teléfono:</strong> 449-123-4567</p>
+            <p><strong>Email:</strong> luis.fernando@gmail.com</p>
+            <p><strong>Ubicación:</strong> Aguascalientes, Ags.</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tuusuario" target="_blank">linkedin.com/in/tuusuario</a></p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Todos los derechos reservados ISC. Luis Fernando Rodriguez Gallo</p>
+    </footer>
 </body>
 </html>
