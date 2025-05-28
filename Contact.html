@@ -1,47 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/style.css">
-    <title>Contacto</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/normalize.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <title>Contacto</title>
+  <style>
+    body {
+      font-family: 'Krub', sans-serif;
+      background-color: #f4f6f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header h1 {
+      text-align: center;
+      color: #1C274C;
+      margin: 2rem 0 1rem;
+    }
+
+    .nav-bg {
+      background-color: #1C274C;
+      padding: 0.5rem 0;
+    }
+
+    .navegacion-principal {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .navegacion-principal a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main.contenedor {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      text-align: center;
+      color: #1C274C;
+      margin-bottom: 2rem;
+    }
+
+    .info-contacto {
+      display: flex;
+      justify-content: center;
+    }
+
+    .card-contacto {
+      background-color: #f5f7fa;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .card-contacto p {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .card-contacto a {
+      color: #1C274C;
+      text-decoration: none;
+    }
+
+    .card-contacto a:hover {
+      text-decoration: underline;
+    }
+
+    footer.footer {
+      text-align: center;
+      padding: 1.5rem 0;
+      background-color: #1C274C;
+      color: white;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .navegacion-principal {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card-contacto {
+        padding: 1.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1> ISC. Luis Fernando Rodriguez Gallo</h1>
-    </header>
+  <header>
+    <h1>ISC. Luis Fernando Rodriguez Gallo</h1>
+  </header>
 
-    <div class="nav-bg">
-        <nav class="navegacion-principal contenedor">
-            <a href="index.html"> Inicio </a>
-            <a href="AboutMe.html"> Sobre mi </a>
-            <a href="#"> Clientes </a>
-            <a href="Contact.html"> Contacto </a>
-        </nav>
-    </div>
+  <div class="nav-bg">
+    <nav class="navegacion-principal contenedor">
+      <a href="index.html">Inicio</a>
+      <a href="AboutMe.html">Sobre mí</a>
+      <a href="#">Clientes</a>
+      <a href="Contact.html">Contacto</a>
+    </nav>
+  </div>
 
-    <main class="contenedor sombra contacto">
+  <main class="contenedor sombra contacto">
     <h2>Contacto</h2>
     <div class="info-contacto">
-        <div class="card-contacto">
-            <p><strong>Nombre:</strong> Luis Fernando Rodriguez Gallo</p>
-            <p><strong>Teléfono:</strong> <a href="tel:4751087864">4751087864</a></p>
-            <p><strong>Email:</strong> <a href="up220054@alumnos.upa.edu.mx">up220054@alumnos.upa.edu.mx</a></p>
-            <p><strong>Ubicación:</strong> Aguascalientes, Ags.</p>
-            <p><strong>LinkedIn:</strong> 
-                <a href="https://www.linkedin.com/in/usuarioejemplo" target="_blank">linkedin.com/in/tuusuario</a>
-            </p>
-        </div>
+      <div class="card-contacto">
+        <p><strong>📛 Nombre:</strong> Luis Fernando Rodriguez Gallo</p>
+        <p><strong>📞 Teléfono:</strong> <a href="tel:4751087864">4751087864</a></p>
+        <p><strong>✉️ Email:</strong> <a href="mailto:up220054@alumnos.upa.edu.mx">up220054@alumnos.upa.edu.mx</a></p>
+        <p><strong>📍 Ubicación:</strong> Aguascalientes, Ags.</p>
+        <p><strong>🔗 LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/usuarioejemplo" target="_blank">linkedin.com/in/tuusuario</a>
+        </p>
+      </div>
     </div>
-</main>
+  </main>
 
-
-    <footer class="footer">
-        <p>Todos los derechos reservados ISC. Luis Fernando Rodriguez Gallo</p>
-    </footer>
+  <footer class="footer">
+    <p>Todos los derechos reservados ISC. Luis Fernando Rodriguez Gallo</p>
+  </footer>
 </body>
 </html>
