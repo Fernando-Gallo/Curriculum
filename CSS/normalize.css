@@ -269,8 +269,8 @@ select {
  */
 
 textarea {
-  margin: 0;
-  overflow: scroll; /* Fuerza la barra de scroll siempre visible */
+  margin: 0; /* 1 */
+  overflow: auto; /* 2 */
 }
 
 /**
